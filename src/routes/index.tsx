@@ -1,18 +1,50 @@
 import React from 'react';
-import { Route, BrowserRouter as Router, Routes, Navigate } from 'react-router-dom';
+import { Routes, Navigate, Route } from 'react-router-dom';
 import Layout from '../layouts/Layout';
+import Analytics from '../pages/analytics';
+import SigIn from '../pages/auth/signin';
+import Settings from '../pages/settings';
+import Work from '../pages/work';
 
 const Home = React.lazy(() => import('../pages/home'));
 
-const BaseRoutes = () => {
+export const BaseRoute = () => {
   return (
-    <Layout>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </Router>
-    </Layout>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <Layout>
+            <Home />
+          </Layout>
+        }
+      />
+      <Route
+        path="/analytics"
+        element={
+          <Layout>
+            <Analytics />
+          </Layout>
+        }
+      />
+      <Route
+        path="/work"
+        element={
+          <Layout>
+            <Work />
+          </Layout>
+        }
+      />
+      <Route
+        path="/settings"
+        element={
+          <Layout>
+            <Settings />
+          </Layout>
+        }
+      />
+      <Route path="/auth/signin" element={<SigIn />} />
+    </Routes>
   );
 };
 
@@ -20,4 +52,4 @@ const PrivateRoute = ({ authUser, children }: { authUser?: string; children: Rea
   return authUser ? children : <Navigate to="/signin" />;
 };
 
-export default BaseRoutes;
+export default BaseRoute;

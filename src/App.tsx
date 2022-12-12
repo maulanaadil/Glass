@@ -1,12 +1,14 @@
-import { Suspense, useState } from 'react';
-import { Router } from 'react-router-dom';
+import React, { Suspense } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Spinner from './components/Spinner';
-import BaseRouter from './routes';
+import BaseRoute from './routes';
 
 function App() {
   return (
     <Suspense fallback={<Spinner />}>
-      <BaseRouter />
+      <Router>
+        <BaseRoute />
+      </Router>
     </Suspense>
   );
 }

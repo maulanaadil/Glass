@@ -11,7 +11,11 @@ const Spinner = ({
   height?: string;
   width?: string;
 }) => {
-  return <ReactLoading type="bubbles" color={color} height={height} width={width} />;
+  return (
+    <div className="h-screen flex justify-center items-center">
+      <ReactLoading type="bubbles" color={color} height={height} width={width} />
+    </div>
+  );
 };
 
 export default Spinner;

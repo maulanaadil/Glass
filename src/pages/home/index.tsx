@@ -1,10 +1,49 @@
 import React from 'react';
-import Spinner from '../../components/Spinner';
+import Card from '../../components/Card';
+import Header from '../../layouts/Header';
 
 const Home = () => {
   return (
-    <div className="h-screen flex justify-center items-center">
-      <Spinner />
+    <div className="flex flex-col">
+      <Header />
+      <div className="py-4 px-8 flex flex-col gap-5">
+        <div className="relative w-full flex flex-col gap-2">
+          <div className="absolute bg-black bg-opacity-20 backdrop-blur-2xl rounded-3xl w-full h-full"></div>
+          <p className="text-white font-bold text-base mx-4 my-4 z-10">Monitoring Target Pad Tahun 2022</p>
+          <div className="grid grid-cols-6 gap-4 mx-4 mb-4 z-10">
+            <Card badgeText="Target Pad" result="100%" number={43000000} className="col-span-2" />
+            <Card
+              badgeText="Total Berkas: 2245 Pemohon"
+              badgeColor="bg-[#2563EB]"
+              result="69%"
+              number={43000000}
+              className="col-span-2"
+            />
+            <Card badgeText="Daviasi" badgeColor="bg-[#EB2525]" result="67%" number={43000000} className="col-span-2" />
+          </div>
+        </div>
+
+        <div className="relative w-full flex flex-col gap-2">
+          <div className="absolute bg-black bg-opacity-20 backdrop-blur-2xl rounded-3xl w-full h-full"></div>
+          <p className="text-white font-bold text-base mx-4 my-4 z-10">
+            Berkas Aktual Terverifikasi dan Belum Terverifikasi Tahun 2022
+          </p>
+          <div className="grid grid-cols-6 gap-4 mx-4 mb-4 z-10">
+            <Card badgeText="Target Pad" result="56%" number={43000000} className="col-span-2" />
+            <Card badgeText="Total Berkas: 2245 Pemohon" result="22%" number={43000000} className="col-span-2" />
+          </div>
+        </div>
+
+        <div className="relative w-full flex flex-col gap-2">
+          <div className="absolute bg-black bg-opacity-20 backdrop-blur-2xl rounded-3xl w-full h-full"></div>
+          <p className="text-white font-bold text-base mx-4 my-4 z-10">Monitoring 2022</p>
+          <div className="grid grid-cols-6 grid-rows-1 gap-4 mx-4 mb-4 z-10">
+            <Card badgeText="Target Pad" result="56%" number={43000000} footer />
+            <Card badgeText="Target Pad" result="22%" number={43000000} footer />
+            <Card badgeText="Target Pad" result="56%" number={43000000} footer />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
