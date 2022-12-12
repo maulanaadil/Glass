@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { X } from 'react-feather';
-import { NavLink } from 'react-router-dom';
 import Card from '../../components/Card';
 import OptionMenu from '../../components/OptionMenu';
 import Header from '../../layouts/Header';

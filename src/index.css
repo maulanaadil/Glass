@@ -20,4 +20,14 @@
   .bg-linear-blue {
     background: linear-gradient(180deg, rgba(153, 153, 153, 0.3) 0%, rgba(51, 143, 226, 0.3) 100%);
   }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* For IE, Edge and Firefox */
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }

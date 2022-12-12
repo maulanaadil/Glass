@@ -8,7 +8,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <div className="relative overflow-auto h-screen w-full flex-1 flex">
         <Sidebar />
         <img src={BGCloud} alt="bg-cloud" className="w-full h-full absolute top-0 left-0 bottom-0 object-fill" />
-        <div className="h-full flex-1 flex flex-col">{children}</div>
+        <div className="h-full flex-1 flex flex-col overflow-scroll scrollbar-hide">{children}</div>
       </div>
     </>
   );
