@@ -25,7 +25,7 @@ const Work = () => {
               result="2331"
               biggerResult
               label="Pemohon"
-              className="col-span-2"
+              className="col-span-6 md:col-span-2"
               footer
               isFooterRight
             />
@@ -34,7 +34,7 @@ const Work = () => {
               result="1500"
               biggerResult
               label="Pemohon"
-              className="col-span-2"
+              className="col-span-6 md:col-span-2"
               badgeColor="bg-[#05ABAB]"
               footer
               isFooterRight
@@ -42,9 +42,10 @@ const Work = () => {
             <Card
               badgeText="Berkas Belum Terverifikasi"
               result="456"
+              biggerResult
               label="Pemohon"
               badgeColor="bg-[#05ABAB]"
-              className="col-span-2"
+              className="col-span-6 md:col-span-2"
               footer
               isFooterRight
             />
@@ -61,7 +62,7 @@ const Work = () => {
               result="38"
               biggerResult
               label="Pemohon"
-              className="col-span-2"
+              className="col-span-6 md:col-span-2"
               footer
               isFooterRight
             />
@@ -70,7 +71,7 @@ const Work = () => {
               result="1456"
               biggerResult
               label="Pemohon"
-              className="col-span-2"
+              className="col-span-6 md:col-span-2"
               badgeColor="bg-[#2563EB]"
               footer
               isFooterRight

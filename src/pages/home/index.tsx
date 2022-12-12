@@ -11,15 +11,21 @@ const Home = () => {
           <div className="absolute bg-black bg-opacity-20 backdrop-blur-2xl rounded-3xl w-full h-full"></div>
           <p className="text-white font-bold text-base mx-4 my-4 z-10">Monitoring Target Pad Tahun 2022</p>
           <div className="grid grid-cols-6 gap-4 mx-4 mb-4 z-10">
-            <Card badgeText="Target Pad" result="100%" number={43000000} className="col-span-2" />
+            <Card badgeText="Target Pad" result="100%" number={43000000} className="col-span-6 md:col-span-2" />
             <Card
               badgeText="Total Berkas: 2245 Pemohon"
               badgeColor="bg-[#2563EB]"
               result="69%"
               number={43000000}
-              className="col-span-2"
+              className="col-span-6 md:col-span-2"
             />
-            <Card badgeText="Daviasi" badgeColor="bg-[#EB2525]" result="67%" number={43000000} className="col-span-2" />
+            <Card
+              badgeText="Daviasi"
+              badgeColor="bg-[#EB2525]"
+              result="67%"
+              number={43000000}
+              className="col-span-6 md:col-span-2"
+            />
           </div>
         </div>
 
@@ -29,8 +35,13 @@ const Home = () => {
             Berkas Aktual Terverifikasi dan Belum Terverifikasi Tahun 2022
           </p>
           <div className="grid grid-cols-6 gap-4 mx-4 mb-4 z-10">
-            <Card badgeText="Target Pad" result="56%" number={43000000} className="col-span-2" />
-            <Card badgeText="Total Berkas: 2245 Pemohon" result="22%" number={43000000} className="col-span-2" />
+            <Card badgeText="Target Pad" result="56%" number={43000000} className="col-span-6 md:col-span-2" />
+            <Card
+              badgeText="Total Berkas: 2245 Pemohon"
+              result="22%"
+              number={43000000}
+              className="col-span-6 md:col-span-2"
+            />
           </div>
         </div>
 
@@ -44,6 +55,7 @@ const Home = () => {
               result="876"
               bgCardColor="bg-linear-green"
               footer
+              className="col-span-3 md:col-span-1"
               label="Pemohon"
             />
             <Card
@@ -52,6 +64,7 @@ const Home = () => {
               result="122"
               bgCardColor="bg-linear-red"
               footer
+              className="col-span-3 md:col-span-1"
               label="Pemohon"
             />
             <Card
@@ -60,6 +73,7 @@ const Home = () => {
               result="111"
               bgCardColor="bg-linear-blue"
               footer
+              className="col-span-3 md:col-span-1"
               label="Pemohon"
             />
           </div>

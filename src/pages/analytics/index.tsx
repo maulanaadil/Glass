@@ -10,13 +10,13 @@ const Analytics = () => {
     <div className="flex flex-col">
       <Header />
       <div className="py-4 px-8 flex flex-col gap-5">
-        <div className="grid grid-cols-2 gap-5">
-          <div className="relative w-full flex flex-col gap-2 h-96">
+        <div className="grid grid-cols-4 gap-5">
+          <div className="relative w-full flex flex-col gap-2 h-96 col-span-4 md:col-span-2">
             <div className="absolute bg-black bg-opacity-20 backdrop-blur-2xl rounded-3xl w-full h-full"></div>
             <p className="text-white font-bold text-base mx-4 mt-4 z-10">Pemohon Berdasarkan Tahun</p>
             <ChartBar data={dataBar} />
           </div>
-          <div className="relative w-full flex flex-col gap-2 h-96">
+          <div className="relative w-full flex flex-col gap-2 h-96 col-span-4 md:col-span-2">
             <div className="absolute bg-black bg-opacity-20 backdrop-blur-2xl rounded-3xl w-full h-full"></div>
             <p className="text-white font-bold text-base mx-4 mt-4 z-10">Pemohon Berdasarkan Status</p>
             <ChartPie data={dataPie} />
