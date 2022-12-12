@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { X } from 'react-feather';
+import { NavLink } from 'react-router-dom';
 import Card from '../../components/Card';
+import OptionMenu from '../../components/OptionMenu';
 import Header from '../../layouts/Header';
 
 const Home = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="flex flex-col">
-      <Header />
+      <Header isOpen={isOpen} setIsOpen={setIsOpen} />
       <div className="py-4 px-8 flex flex-col gap-5">
         <div className="relative w-full flex flex-col gap-2">
           <div className="absolute bg-black bg-opacity-20 backdrop-blur-2xl rounded-3xl w-full h-full"></div>
@@ -79,6 +83,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {isOpen && <OptionMenu isOpen={isOpen} setIsOpen={setIsOpen} />}
     </div>
   );
 };
