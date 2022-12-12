@@ -20,27 +20,29 @@ const Work = () => {
           </div>
           <div className="grid grid-cols-6 gap-4 mx-4 mb-4 z-10">
             <Card
-              badgeText="Target Pad"
+              badgeText="Total Berkas"
               badgeColor="bg-[#05ABAB]"
-              result="56%"
-              number={43000000}
+              result="2331"
+              biggerResult
+              label="Pemohon"
               className="col-span-2"
               footer
               isFooterRight
             />
             <Card
-              badgeText="Total Berkas: 2245 Pemohon"
-              result="22%"
-              number={43000000}
+              badgeText="Berkas Terverifikasi"
+              result="1500"
+              biggerResult
+              label="Pemohon"
               className="col-span-2"
               badgeColor="bg-[#05ABAB]"
               footer
               isFooterRight
             />
             <Card
-              badgeText="Total Berkas: 2245 Pemohon"
-              result="22%"
-              number={43000000}
+              badgeText="Berkas Belum Terverifikasi"
+              result="456"
+              label="Pemohon"
               badgeColor="bg-[#05ABAB]"
               className="col-span-2"
               footer
@@ -54,18 +56,20 @@ const Work = () => {
           <p className="text-white font-bold text-base mx-4 mt-4 z-10">Monitoring Potensi Usaha 2022</p>
           <div className="grid grid-cols-6 gap-4 mx-4 mb-4 z-10">
             <Card
-              badgeText="Target Pad"
+              badgeText="Potensi besar fungsi luasan besar"
               badgeColor="bg-[#2563EB]"
-              result="56%"
-              number={43000000}
+              result="38"
+              biggerResult
+              label="Pemohon"
               className="col-span-2"
               footer
               isFooterRight
             />
             <Card
-              badgeText="Total Berkas: 2245 Pemohon"
-              result="22%"
-              number={43000000}
+              badgeText="Potensi kecil fungsi usaha"
+              result="1456"
+              biggerResult
+              label="Pemohon"
               className="col-span-2"
               badgeColor="bg-[#2563EB]"
               footer

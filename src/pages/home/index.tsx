@@ -38,9 +38,30 @@ const Home = () => {
           <div className="absolute bg-black bg-opacity-20 backdrop-blur-2xl rounded-3xl w-full h-full"></div>
           <p className="text-white font-bold text-base mx-4 my-4 z-10">Monitoring 2022</p>
           <div className="grid grid-cols-6 grid-rows-1 gap-4 mx-4 mb-4 z-10">
-            <Card badgeText="Target Pad" result="56%" number={43000000} footer />
-            <Card badgeText="Target Pad" result="22%" number={43000000} footer />
-            <Card badgeText="Target Pad" result="56%" number={43000000} footer />
+            <Card
+              badgeText="Total Pemohon"
+              badgeColor="transparent"
+              result="876"
+              bgCardColor="bg-linear-green"
+              footer
+              label="Pemohon"
+            />
+            <Card
+              badgeText="Di Cek"
+              badgeColor="transparent"
+              result="122"
+              bgCardColor="bg-linear-red"
+              footer
+              label="Pemohon"
+            />
+            <Card
+              badgeText="Belum Di Cek"
+              badgeColor="transparent"
+              result="111"
+              bgCardColor="bg-linear-blue"
+              footer
+              label="Pemohon"
+            />
           </div>
         </div>
       </div>

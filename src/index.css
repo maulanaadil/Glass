@@ -7,3 +7,17 @@
     font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   }
 }
+
+@layer components {
+  .bg-linear-green {
+    background: linear-gradient(180deg, rgba(140, 140, 140, 0.3) 0%, rgba(6, 172, 172, 0.3) 100%);
+  }
+
+  .bg-linear-red {
+    background: linear-gradient(180deg, rgba(126, 126, 126, 0.3) 0%, rgba(254, 91, 86, 0.3) 100%);
+  }
+
+  .bg-linear-blue {
+    background: linear-gradient(180deg, rgba(153, 153, 153, 0.3) 0%, rgba(51, 143, 226, 0.3) 100%);
+  }
+}
